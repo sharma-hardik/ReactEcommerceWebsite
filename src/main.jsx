@@ -7,8 +7,7 @@ import { AppProvider } from "./context";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <AppProvider>
     <React.StrictMode>
-      {/* <App /> */}
-      <h1>Hello</h1>
+      <App />
     </React.StrictMode>
   </AppProvider>
 );
