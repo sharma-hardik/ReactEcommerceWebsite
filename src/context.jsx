@@ -4,6 +4,8 @@
 
 import React, { useContext, useEffect, useReducer } from "react";
 import { reducer } from "./reducer.jsx";
+import HeroImage from "./assets/images/hero.svg";
+import AboutImage from "./assets/images/about1.svg";
 
 const AppContext = React.createContext();
 const API = "https://fakestoreapi.com/products/category/men's clothing";
@@ -22,7 +24,7 @@ const AppProvider = ({ children }) => {
       type: "HOME_UPDATE",
       payload: {
         name: "Hardik Sharma",
-        image: "./images/hero.svg",
+        image: HeroImage,
       },
     });
   };
@@ -32,7 +34,7 @@ const AppProvider = ({ children }) => {
       type: "ABOUT_UPDATE",
       payload: {
         name: "Software Engineer",
-        image: "./images/about1.svg",
+        image: AboutImage,
       },
     });
   };
